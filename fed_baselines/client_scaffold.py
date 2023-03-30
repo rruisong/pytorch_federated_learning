@@ -1,9 +1,9 @@
 from fed_baselines.client_base import FedClient
 import copy
-from utilities.models import *
+from utils.models import *
 
 from torch.utils.data import DataLoader
-from utilities.fed_utilities import init_model
+from utils.fed_utils import init_model
 
 
 class ScaffoldClient(FedClient):

@@ -4,7 +4,7 @@ PyTorch-Federated-Learning offers the basic implementation of various federated 
 The codebase is designed with client-server architecutre and easy to understand. 
 
 
-* **Dataset preprocessing**: Downloading the benchmark datasets automatically and dividing them into a number of clients w.r.t. federated settings. The current supported datasets are MNIST, Fashion-MNIST, SVHN, CIFAR-10, CIFAR-100. 
+* **Dataset preprocessing**: Downloading the benchmark datasets automatically and dividing them into a number of clients w.r.t. federated settings. The current supported datasets are MNIST, Fashion-MNIST, EMNIST, SVHN, CIFAR-10, CIFAR-100. Further datasets need to be downloaded manually.
 * **Current Baseline implementations**: Pytorch implementations of the FL-baselines, i.e. FedAvg, FedNova, FedProx and SCAFFOLD
 * **Postprocessing**: Visualization of the training results for evaluation.
 
@@ -29,9 +29,6 @@ This preprocessing aims to divide the entire datasets into a dedicated number of
 
 Depending on the value of C_k (the number of classes in each local dataset), the entire dataset are split into Non-IID datasets in terms of label distribution skew.
 
-By calling the function `divide_data()`, one of the used datasets in this paper, i.e. MNIST, CIFAR-10, Fashion-MNIST and SVHN is downloaded via Pytorch automatically.
-
-The module has been integrated into the main functions of FedD3 and baselines.
 
 ## Execute the Federated Learning Baselines
 

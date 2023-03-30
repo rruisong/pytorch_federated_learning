@@ -1,6 +1,6 @@
 from fed_baselines.client_base import FedClient
 import copy
-from utilities.models import *
+from utils.models import *
 
 from torch.utils.data import DataLoader
 

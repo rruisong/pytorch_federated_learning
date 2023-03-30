@@ -1,4 +1,4 @@
-from utilities.models import *
+from utils.models import *
 
 
 def assign_dataset(dataset_name):

@@ -1,7 +1,7 @@
-from utilities.models import *
+from utils.models import *
 import torch
 from torch.utils.data import DataLoader
-from utilities.fed_utilities import assign_dataset, init_model
+from utils.fed_utilities import assign_dataset, init_model
 
 
 class FedServer(object):
