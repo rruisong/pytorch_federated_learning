@@ -4,8 +4,8 @@ PyTorch-Federated-Learning provides various federated learning baselines impleme
 
 If you find this repository useful, please let me know with your stars:star:. Thank you!
 
-* **Current Baseline implementations**: Pytorch implementations of the federated learning baselines. The current supported baselines are FedAvg, FedNova, FedProx and SCAFFOLD
-* **Dataset preprocessing**: Downloading the benchmark datasets automatically and dividing them into a number of clients w.r.t. federated settings. The current supported datasets are MNIST, Fashion-MNIST, SVHN, CIFAR-10, CIFAR-100. Further datasets need to be downloaded manually.
+* **Current Baseline implementations**: Pytorch implementations of the federated learning baselines. The currently supported baselines are FedAvg, FedNova, FedProx and SCAFFOLD
+* **Dataset preprocessing**: Downloading the benchmark datasets automatically and dividing them into a number of clients w.r.t. federated settings. The currently supported datasets are MNIST, Fashion-MNIST, SVHN, CIFAR-10, CIFAR-100. Other datasets need to be downloaded manually.
 * **Postprocessing**: Visualization of the training results for evaluation.
 
 
