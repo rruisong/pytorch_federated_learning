@@ -1,0 +1,14 @@
+numpy~=1.21.5
+scipy~=1.7.0
+Pillow~=8.2.0
+torch~=1.8.1
+torchvision~=0.9.1
+matplotlib~=3.4.2
+tqdm~=4.61.1
+opencv-python~=4.5.3.56
+scikit-learn~=0.24.2
+colorama~=0.4.4
+jax~=0.3.7
+jaxlib>=0.3.7
+neural-tangents~=0.6.0
+pykeops~=2.1
