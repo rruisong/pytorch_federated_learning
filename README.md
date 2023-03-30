@@ -1,11 +1,9 @@
-# PyTorch Implementation of various Federated Learning Baselines
+# PyTorch Implementation of Federated Learning Baselines
 
-PyTorch-Federated-Learning offers the basic implementation of various federated learning algorithms using Pytorch framework.
-The codebase is designed with client-server architecutre and easy to understand. 
+PyTorch-Federated-Learning provides various federated learning baselines implemented using the PyTorch framework. The codebase follows a client-server architecture and is highly intuitive and accessible.
 
-
-* **Dataset preprocessing**: Downloading the benchmark datasets automatically and dividing them into a number of clients w.r.t. federated settings. The current supported datasets are MNIST, Fashion-MNIST, EMNIST, SVHN, CIFAR-10, CIFAR-100. Further datasets need to be downloaded manually.
-* **Current Baseline implementations**: Pytorch implementations of the FL-baselines, i.e. FedAvg, FedNova, FedProx and SCAFFOLD
+* **Current Baseline implementations**: Pytorch implementations of the federated learning baselines. The current supported baselines are FedAvg, FedNova, FedProx and SCAFFOLD
+* **Dataset preprocessing**: Downloading the benchmark datasets automatically and dividing them into a number of clients w.r.t. federated settings. The current supported datasets are MNIST, Fashion-MNIST, SVHN, CIFAR-10, CIFAR-100. Further datasets need to be downloaded manually.
 * **Postprocessing**: Visualization of the training results for evaluation.
 
 
@@ -26,8 +24,7 @@ Run: `pip install -r requirements.txt` to install the required packages.
 ## Federated Dataset Preprocessing
 
 This preprocessing aims to divide the entire datasets into a dedicated number of clients with respect to federated settings.
-
-Depending on the value of C_k (the number of classes in each local dataset), the entire dataset are split into Non-IID datasets in terms of label distribution skew.
+Depending on the the number of classes in each local dataset, the entire dataset are split into Non-IID datasets in terms of label distribution skew.
 
 
 ## Execute the Federated Learning Baselines
