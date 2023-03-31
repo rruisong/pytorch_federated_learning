@@ -17,7 +17,7 @@ from fed_baselines.server_fednova import FedNovaServer
 
 from postprocessing.recorder import Recorder
 from preprocessing.baselines_dataloader import divide_data
-from utilities.models import *
+from utils.models import *
 
 json_types = (list, dict, str, int, float, bool, type(None))
 
