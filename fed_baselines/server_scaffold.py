@@ -1,4 +1,4 @@
-from utils.fed_utilities import init_model
+from utils.fed_utils import init_model
 from fed_baselines.server_base import FedServer
 import copy
 

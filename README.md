@@ -32,56 +32,12 @@ Depending on the the number of classes in each local dataset, the entire dataset
 ## Execute the Federated Learning Baselines
 
 ### Test Run
+Hyperparameters are defined in a yaml file, e.g. "./config/test_config.yaml", and then just run with this configuration:
 
 ```
-python baselines_main.py -nc 10 \
-                         -ck 10 \
-                         -ds 'MNIST' \
-                         -md 'LeNet' \
-                         -is 0 \
-                         -rr 'results' \
-                         -nr 500 \
-                         -os 1\
-                         -cis 'FedAvg' \
-                         -cil 0.001 \
-                         -cib 50 \
-                         -cie 1 \
-                         -sim 0.9 \
-                         -sin 1
+python fl_main.py --config "./config/test_config.yaml"
 ```
 
-
-### Explanations of Arguments
-
-- `--sys-n_client` `-nc`: Number of the clients
-- `--sys-n_local_class` `-ck`: Number of the classes in each client
-- `--sys-dataset` `-ds`: Dataset name, one of the following five datasets: "MNIST", "CIFAR10", "FashionMnist", "SVHN", "CIFAR100"
-- `--sys-model` `-md`: Model name
-- `--sys-i_seed` `-is`: Seed used in experiments
-- `--sys-res_root` `-rr`: Root directory of the results
-- `--sys-n_round` `-nr`: Number of global communication rounds
-- `--sys-oneshot` `-os`: Ture if only run with one-shot communication, otherwise false.
-  
-
-- `--client-instance` `-cis`: Instance of federated learning algorithm used in clients: "FedAvg", "SCAFFOLD", "FedNova" and "FedProx"
-- `--client-instance_lr` `-cil`: Learning rate in clients
-- `--client-instance_bs` `-cib`: Batch size in clients
-- `--client-instance_n_epoch` `-cie`: Number of local training epochs in clients
-- `--client-instance_momentum` `-sim`: Momentum of local training in clients
-- `--client-instance_n_worker` `-sin`: Number of workers in the server
-
-### Examples
-
-* **Example I** Run: `python baselines_main.py -nc 500 -ck 10 -ds 'MNIST' -md 'LeNet' -is 0 -rr 'results' 
--nr 18 -cis 'FedAvg' -cil 0.001 -cib 50 -cie 50 -sim 0.9 -sin 1`
-
-* **Example II** Run SCAFFOLD on Non-IID MNIST with 500 clients:
-Run: `python baselines_main.py -nc 500 -ck 2 -ds 'MNIST' -md 'LeNet' -is 0 -rr 'results' 
--nr 18 -cis 'SCAFFOLD' -cil 0.001 -cib 50 -cie 50 -sim 0.9 -sin 1`
-
-* **Results**
-
-![drawing](figures/Baselines.png)
 
 ## Evaluation Procedures
 
