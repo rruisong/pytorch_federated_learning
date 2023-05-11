@@ -6,7 +6,12 @@ PyTorch-Federated-Learning 提供了使用PyTorch框架实现的各种联邦学�
 
 [英文](README.md)|[简体中文](README.zh-CN.md)<br>
 
-* **当前的基线实现**: Pytorch 实现的联邦学习基线。目前支持的基线有 FedAvg、FedNova、FedProx 和 SCAFFOLD
+* **当前的基线实现**: Pytorch 实现的联邦学习基线。目前支持的基线有 FedAvg、FedNova、FedProx 和 SCAFFOLD:
+  + [FedAvg](https://arxiv.org/abs/1602.05629) (Hugh Brendan McMahan et al., AISTATS 2017)
+  + [FedNova](https://arxiv.org/abs/2007.07481) (Jianyu Wang et al., NeurIPS 2020) [:octocat:](https://github.com/JYWa/FedNova) 
+  + [FedProx](https://arxiv.org/abs/1812.06127) (Tian Li et al., MLSys 2020) [:octocat:](https://github.com/litian96/FedProx) 
+  + [SCAFFOLD](https://arxiv.org/abs/1910.06378) (Sai Praneeth Karimireddy et al.,ICML 2020) [:octocat:](https://github.com/ki-ljl/Scaffold-Federated-Learning) 
+ 
 * **数据集预处理**: 自动下载常用的公开数据集，并将其根据联邦学习特点分割给多个客户端，比如按照不同的非独立同分布要求进行分割。目前支持的数据集有 MNIST，Fashion-MNIST，SVHN，CIFAR-10，CIFAR-100。其他数据集需要手动下载。
 * **后处理**: 为评估而进行的训练结果可视化。
 
