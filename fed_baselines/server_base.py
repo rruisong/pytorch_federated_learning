@@ -78,11 +78,12 @@ class FedServer(object):
         """
         # select a fraction of clients
         self.selected_clients = []
+        self.n_data = 0
         for client_id in self.client_list:
             b = np.random.binomial(np.ones(1).astype(int), connection_ratio)
             if b:
                 self.selected_clients.append(client_id)
-        # print(self.selected_rsu_ids)
+                self.n_data += self.client_n_data[client_id]
 
     def agg(self):
         """
