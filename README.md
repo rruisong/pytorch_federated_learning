@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/Contributions-Welcome-278ea5" alt="Contrib"/>![Stars](https://img.shields.io/github/stars/rruisong/pytorch_federated_learning?color=yellow&label=Stars)![Forks](https://img.shields.io/github/forks/rruisong/pytorch_federated_learning?color=green&label=Forks)
+
 # PyTorch Implementation of Federated Learning Baselines
 
 PyTorch-Federated-Learning provides various federated learning baselines implemented using the PyTorch framework. The codebase follows a client-server architecture and is highly intuitive and accessible.
