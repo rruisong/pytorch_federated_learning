@@ -53,3 +53,26 @@ python fl_main.py --config "./config/test_config.yaml"
 Please run `python postprocessing/eval_main.py -rr 'results'` to plot the testing accuracy and training loss by the increasing number of epochs or communication rounds. 
 Note that the labels in the figure is the name of result files
 
+# Citation
+
+Our recent work about FedBEVT and ResFed:
+```bibtex
+@ARTICLE{song2023fedbevt,
+  author={Song, Rui and Xu, Runsheng and Festag, Andreas and Ma, Jiaqi and Knoll, Alois},
+  journal={IEEE Transactions on Intelligent Vehicles}, 
+  title={FedBEVT: Federated Learning Bird's Eye View Perception Transformer in Road Traffic Systems}, 
+  year={2023},
+  pages={1-12},
+  doi={10.1109/TIV.2023.3310674}}
+```
+```bibtex
+@ARTICLE{song2022resfed,
+  author={Song, Rui and Zhou, Liguo and Lyu, Lingjuan and Festag, Andreas and Knoll, Alois},
+  journal={IEEE Internet of Things Journal}, 
+  title={ResFed: Communication Efficient Federated Learning With Deep Compressed Residuals}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-15},
+  doi={10.1109/JIOT.2023.3324079}}
+```
